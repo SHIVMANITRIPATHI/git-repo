@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Simple Page</title>
+  <title>MPPSC Registration Form</title>
 </head>
 <body>
 
-  <h1>Welcome to My Website</h1>
-  <p>This is a simple HTML page.</p>
+  <h1>MPPSC Registration Form</h1>
 
-  <button onclick="alert('Hello, world!')">Click Me</button>
+  <form action="#" method="post">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="tel" id="mobile" name="mobile" required><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="category">Category:</label><br>
+    <select id="category" name="category" required>
+      <option value="">--Select--</option>
+      <option value="general">General</option>
+      <option value="obc">OBC</option>
+      <option value="sc">SC</option>
+      <option value="st">ST</option>
+    </select><br><br>
+
+    <label for="qualification">Qualification:</label><br>
+    <input type="text" id="qualification" name="qualification" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+    <input type="submit" value="Register">
+
+  </form>
 
 </body>
 </html>
